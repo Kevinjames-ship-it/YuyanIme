@@ -3,8 +3,9 @@ name: Build and Release YuyanIme APK
 on:
   push:
     tags:
-    workflow_dispatch
       - 'v*'
+      workflow_dispatch:
+      
 jobs:
   build:
     name: Build and Sign APK
