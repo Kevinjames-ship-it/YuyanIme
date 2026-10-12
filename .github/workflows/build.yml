@@ -3,6 +3,7 @@ name: Build and Release YuyanIme APK
 on:
   push:
     tags:
+    workflow_dispatch
       - 'v*'
 jobs:
   build:
